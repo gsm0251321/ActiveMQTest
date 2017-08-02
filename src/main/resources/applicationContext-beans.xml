@@ -8,10 +8,14 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
 	<!-- 连接池 -->
-	<!-- <bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory" 
-		destroy-method="stop"> <property name="connectionFactory"> <bean class="org.apache.activemq.ActiveMQConnectionFactory"> 
-		<property name="brokerURL" value="tcp://localhost:61616" /> </bean> </property> 
-		</bean> -->
+	<!-- <bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory"
+		destroy-method="stop">
+		<property name="connectionFactory">
+			<bean class="org.apache.activemq.ActiveMQConnectionFactory">
+				<property name="brokerURL" value="tcp://localhost:61616" />
+			</bean>
+		</property>
+	</bean> -->
 
 	<!-- 连接工厂 -->
 	<bean id="activeMQConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
@@ -32,5 +36,6 @@
 			<bean
 				class="org.springframework.jms.support.converter.SimpleMessageConverter" />
 		</property>
+		<property name=""></property>
 	</bean>
 </beans>
